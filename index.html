@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
+    <meta charset="UTF-8">
+    <link rel="icon"
+          sizes="192x192"
+          href="favicon.png">
+    <title>WinGamma by Milkysoft</title>
+    <meta name="theme-color"
+          content="#ff5500">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <meta name="author"
+          content="Milkysoft Developers">
+    <meta name="description"
+          content="Get all your favorite high and low graphical game for your window PC for free.">
+    <meta name="keywords"
+          content="GTA Vice City 2003">
+    <link rel="stylesheet"
+          type="text/css"
+          href="stylec.css">
+
+    <script src="script.js"></script>
+
+    <noscript>
+        <style>
+            body {
+                display: block;
+            }
+        </style>
+    </noscript>
+</head>
+<body id="body"
+      onload="showContent()">
+<div class="search-content_1">
+    <div class="search-content_2">
+<div>
+    <img src="wingamma.png"
+         class="wingamma-logo"
+         alt="WinGamma Logo"
+         title="WinGamma have collections of thousands of your favorite games for windows PC">
+</div>
+
+<div class="search-wrapper">
+    <div class="search-cover"
+         id="search-cover">
+        <div class="search-inline">
+            <img src="search_icon.svg"
+                 alt="Search Icon"
+                 class="options-icon"/>
+            <input class="search-bar"
+                   id="search"
+                   onkeyup="search()"
+                   onfocusin="search()"
+                   onfocusout="tryHideOptions()"
+                   spellcheck="false"
+                   autocomplete="off"
+                   type="text"
+                   placeholder="Search your favorite game..."
+                   title="WinGamma Search">
+        </div>
+        <div id="searchOptionsWrapper"
+             class="search-options_wrapper">
+            <hr>
+            <ul id="searchOptions"
+                class="search-options">
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA Vice City 2003</a></li
+                >
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA Vice City 2010</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA V</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA IV</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA San Andreas</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA III Liberty</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">GTA Vice city Adversary</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">Prince Of Persia The Forgotten Sand</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">Need For Speed The Most Wanted</a></li>
+
+                <li class="options-body">
+                    <img src="search_icon.svg"
+                         alt="Search Icon"
+                         class="options-icon"/>
+                    <a class="options-name"
+                       onclick="changeSearch(this);"
+                       href="/">Need For Speed The Second Edition</a></li>
+
+                <li id="noResult"
+                    class="no-result options-body">
+                    <a class="options-name">No result found</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</body>
+</html>
