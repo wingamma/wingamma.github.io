@@ -12,16 +12,12 @@ button {
     align-items: center;
 }
 
-.milkysoft_head_cover {
+.head_cover {
     margin-left: 1%;
     width: 30%;
 }
 
-.milkysoft_head_logo:hover {
-    cursor: pointer;
-}
-
-.milkysoft_head_cover:hover {
+.head_cover:hover {
     cursor: pointer;
 }
 
@@ -130,16 +126,16 @@ button {
     }
 }
 
-.milkysoft_titles {
+.titles {
     color: white;
     font-size: 4vw;
 }
 
-.app_icon {
+.game_icon {
     width: 25%;
 }
 
-.app_name {
+.game_name {
     color: white;
     font-size: 4.5vw;
 }
@@ -232,12 +228,12 @@ button {
     }
 }
 
-.app_download_detail {
+.game_download_detail {
     color: white;
     font-size: 2vw;
 }
 
-.app_download_now {
+.game_download_now {
     width: 35%;
 }
 
@@ -279,12 +275,12 @@ height: 90vh;
     font-size: 2vw;
 }
 
-.app_des {
+.game_des {
     border-radius: 4% / 20%;
     background-color: #323639;
 }
 
-.app_des_text {
+.game_des_text {
     margin: 1% auto 2% auto;
     padding: 2%;
     color: white;
