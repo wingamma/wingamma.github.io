@@ -23,7 +23,7 @@ function search() {
     input = document.getElementById("search");
     if (input.value === "") {
         hideOptions()
-    } else  {
+    } else {
         showOptions()
         filter = input.value.toUpperCase();
         ul = document.getElementById("searchOptions");
@@ -36,9 +36,9 @@ function search() {
             if (txtValue.toUpperCase().indexOf(filter) > -1) {
                 if (txtValue === "No result found") {
                     li[i].style.display = "none";
-                } else  if (input.value.substring(0,1) === " ") {
+                } else if (input.value.substring(0, 1) === " ") {
                     li[i].style.display = "none";
-                }else{
+                } else {
                     isShowing = true;
                     li[i].style.display = "";
                 }

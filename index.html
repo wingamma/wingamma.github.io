@@ -3,183 +3,100 @@
 <head>
     <?php Header("Cache-Control: max-age=3000, must-revalidate"); ?>
     <meta charset="UTF-8">
-    <link rel="icon"
-          sizes="192x192"
-          href="favicon.png">
+    <link rel="icon" sizes="192x192" href="favicon.png">
     <title>WinGamma by Milkysoft</title>
-    <meta name="theme-color"
-          content="#000000">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <meta name="author"
-          content="Milkysoft Developers">
-    <meta name="description"
-          content="Get all your favorite high and low graphical game for your window PC for free.">
-    <meta name="keywords"
-          content="GTA Vice City 2003">
-    <link rel="stylesheet"
-          type="text/css"
-          href="style.css">
+    <meta name="theme-color" content="#689f38">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Milkysoft Developers">
+    <meta name="description" content="Get all your favorite high and low graphical game for your window PC for free.">
+    <meta name="keywords" content="GTA Vice City 2003">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js">
 
-    <script src="script.js"></script>
-
+    </script>
 </head>
-<body id="body"
-      onload="showContent()">
-
+<body id="body" onload="showContent()">
 <noscript>
-    <style>
-        body{
-            display: block;
-        }
-        .search-content_1 {
-            display: none;
-        }
-    </style>
-<div style=" width: 100%; height: 100%;display: flex;
-    position: fixed;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;">
-    <div style="background-color: white; width: 50%; height: auto; z-index: 10; margin: auto; border-radius: 6%/15%;">
-        <h1 style="text-align: center;color: black; margin: 2%; font-size: 3vw; width:auto;">JavaScript Disabled!</h1>
-        <hr>
-        <p style="bottom : 0; right:0; margin:2%; color: black; font-size: 2vw; width: auto; text-align: center;">
-            JavaScript is not enabled on your browser, modern websites uses JavaScrip to work properly. Please enable JavaScript on your browser.
-        </p>
-        <a style="text-align: center; margin:2%;font-size: 2vw; width: auto" href="https://www.enable-javascript.com/" target="_blank">Instruction: How to enable JavaScript in your web browser</a>
-        <hr>
-        <a style="text-align: center;bottom : 0; right:0; margin:2%; color: black; font-size: 1.8vw;" href="/" >
-        <button style="background-color: cornflowerblue; font-size: 1.5vw; margin: 1%; padding: 2% 3%">Done</button>
-        </a>
+    <style>body {display: block;}.search-content_1 {display: none;}</style>
+    <div style=" width: 100%; height: 100%;display: flex;position: fixed;align-items: center;top: 0;left: 0;right: 0;bottom: 0;">
+        <div style="background-color: white; width: 50%; height: auto; z-index: 10; margin: auto; border-radius: 6%/15%;">
+            <h1 style="text-align: center;color: black; margin: 2%; font-size: 3vw; width:auto;">JavaScript Disabled!</h1>
+            <hr>
+            <p style="bottom : 0; right:0; margin:2%; color: black; font-size: 2vw; width: auto; text-align: center;">JavaScript is not enabled on your browser, modern websites uses JavaScrip to work properly. Please enable JavaScript on your browser. </p>
+            <a style="text-align: center; margin:2%;font-size: 2vw; width: auto" href="https://www.enable-javascript.com/" target="_blank">Instruction: How to enable JavaScript in your web browser</a>
+            <hr>
+            <a style="text-align: center;bottom : 0; right:0; margin:2%; color: black; font-size: 1.8vw;" href="/">
+                <button style="background-color: cornflowerblue; font-size: 1.5vw; margin: 1%; padding: 2% 3%">Done</button>
+            </a>
+        </div>
     </div>
-</div>
 </noscript>
-
 <div class="search-content_1">
     <div class="search-content_2">
-<div>
-    <img src="wingamma.png"
-         class="wingamma-logo"
-         alt="WinGamma Logo"
-         title="WinGamma have thousands of games for windows">
-</div>
-
-<div class="search-wrapper">
-    <div class="search-cover"
-         id="search-cover">
-        <div class="search-inline">
-            <img src="search_icon.svg"
-                 alt="Search Icon"
-                 class="options-icon"/>
-            <input class="search-bar"
-                   id="search"
-                   onkeyup="search()"
-                   onfocusin="search()"
-                   onfocusout="tryHideOptions()"
-                   spellcheck="false"
-                   autocomplete="off"
-                   type="text"
-                   placeholder="Search your favorite game..."
-                   title="WinGamma Search">
+        <div>
+            <img src="wingamma.png" class="wingamma-logo" alt="WinGamma Logo" title="WinGamma provides thousands of games for windows">
         </div>
-        <div id="searchOptionsWrapper"
-             class="search-options_wrapper">
-            <hr>
-            <ul id="searchOptions"
-                class="search-options">
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA Vice City 2003</a></li
-                >
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA Vice City 2010</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA V</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA IV</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA San Andreas</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA III Liberty</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">GTA Vice city Adversary</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">Prince Of Persia The Forgotten Sand</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">Need For Speed The Most Wanted</a></li>
-
-                <li class="options-body">
-                    <img src="search_icon.svg"
-                         alt="Search Icon"
-                         class="options-icon"/>
-                    <a class="options-name"
-                       onclick="changeSearch(this);"
-                       href="/">Need For Speed The Second Edition</a></li>
-
-                <li id="noResult"
-                    class="no-result options-body">
-                    <a class="options-name">No result found</a></li>
-            </ul>
+        <div class="search-wrapper">
+            <div class="search-cover" id="search-cover">
+                <div class="search-inline">
+                    <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                    <input class="search-bar" id="search" onkeyup="search()" onfocusin="search()" onfocusout="tryHideOptions()" spellcheck="false" autocomplete="off" type="text" placeholder="Search your favorite game..." title="WinGamma Search">
+                </div>
+                <div id="searchOptionsWrapper" class="search-options_wrapper">
+                    <hr>
+                    <div id="searchOptions" class="search-options">
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA Vice City 2003</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA Vice City 2010</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA V</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA IV</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA San Andreas</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA III Liberty</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">GTA Vice city Adversary</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/game/counter-strike-1.6">Counter-Strike 1.6 (CS 1.6)</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">Prince Of Persia The Forgotten Sand</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">Need For Speed The Most Wanted</a>
+                        </div>
+                        <div class="options-body">
+                            <img src="search_icon.svg" alt="Search Icon" class="options-icon">
+                            <a class="options-name" onclick="changeSearch(this);" href="/">Need For Speed The Second Edition</a>
+                        </div>
+                        <div id="noResult" class="no-result options-body">
+                            <a class="options-name">No result found</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-</div>
 </div>
 </body>
 </html>

@@ -23,7 +23,7 @@ body {
     display: none;
     position: relative;
     background-color: black;
-    overflow: hidden;
+overflow: hidden;
     animation-name: startup;
     animation-duration: 1s;
     -webkit-animation-name: startup;
@@ -32,10 +32,11 @@ body {
     -moz-animation-duration: 1s;
     -o-animation-name: startup;
     -o-animation-duration: 1s;
+
 }
 
 ::-webkit-scrollbar {
-    width: 1vw;
+    width: 0;
 }
 ::-webkit-scrollbar-track {
     background: #ffffff;
@@ -143,7 +144,6 @@ body {
     border: none;
     background-color: transparent;
     width: 50vw;
-    height: 4.5vh;
     font-family: "Segoe UI Black", serif;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -162,6 +162,7 @@ body {
     height: auto;
     margin-left: 1%;
 }
+/*
 @media screen and (max-width: 1024px) {
     .wingamma-logo {
         width: 60%;
@@ -259,7 +260,7 @@ body {
 @media screen and (orientation: portrait){
 
 }
-
+*/
 @-webkit-keyframes startup {
     from {
         -webkit-transform: translateX(100px);
