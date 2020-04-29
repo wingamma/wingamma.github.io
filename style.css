@@ -23,7 +23,7 @@ body {
     display: none;
     position: relative;
     background-color: black;
-overflow: hidden;
+    overflow: hidden;
     animation-name: startup;
     animation-duration: 1s;
     -webkit-animation-name: startup;
@@ -38,6 +38,7 @@ overflow: hidden;
 ::-webkit-scrollbar {
     width: 0;
 }
+
 ::-webkit-scrollbar-track {
     background: #ffffff;
 }
@@ -162,6 +163,7 @@ overflow: hidden;
     height: auto;
     margin-left: 1%;
 }
+
 /*
 @media screen and (max-width: 1024px) {
     .wingamma-logo {
