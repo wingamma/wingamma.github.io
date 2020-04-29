@@ -17,15 +17,15 @@
     <noscript>
         <style>
             #content {
-            display: block;
-        }
+                display: block;
+            }
 
-        #splash {
-            display: none;
-        }</style>
+            #splash {
+                display: none;
+            }</style>
     </noscript>
 </head>
-<body >
+<body onload="onContentLoaded()">
 <div style="position: fixed;
 top: 0;
 left: 0;
@@ -38,7 +38,7 @@ background-color: #000000;" id="splash">
              src="favicon.png"
              title="WinGamma is loading your page, Please Wait..."
              alt="Counter-Strike 1.6 (1.6)">
-       </div>
+    </div>
 </div>
 
 <noscript>
@@ -49,92 +49,101 @@ background-color: #000000;" id="splash">
     </div>
 </noscript>
 
-<div id="content" class="content" onload="onContentLoaded()">
+<div id="content" class="content">
 
-<div id="viewScreen" class="view_screen">
-    <span class="close_view_screen" onclick="closeViewScreen()">&times;</span>
-    <img id="viewScreen1" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 1">
-    <img id="viewScreen2" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 2">
-    <img id="viewScreen3" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 3">
-    <img id="viewScreen4" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 4">
-    <img id="viewScreen5" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 5">
-    <img id="viewScreen6" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 6">
-    <img id="viewScreen7" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 7">
-    <img id="viewScreen8" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 8">
-</div>
-<div class="head">
-    <img onclick="openLink('/',false)" class="head_cover" src="../../wingamma.png" alt="WinGamma Logo">
-    <button onclick="openLink('/',false)" class="menu_button_1">Search</button>
-    <button onclick="openLink('../../support',false)" class="menu_button_2">Support</button>
-    <button onclick="openLink('../../about',false)" class="menu_button_3">About</button>
-</div>
-<hr>
-<img class="game_icon" src="images/icon.png" alt="Counter-Strike 1.6 Icon">
-<h1 class="game_name">Counter-Strike 1.6 (CS 1.6)</h1>
-<p class="game_download_detail">Download Size: 193 MB (EXE File)</p>
-<a href="https://github.com/wingamma/wingamma.github.io/releases/download/game/Counter-Strike-1.6-Setup-WinGamma.exe"
-   target="_blank">
-    <img class="game_download_now" src="images/download_now.png" alt="Download Now!">
-</a>
-<hr>
-<h1 class="titles">Screenshots</h1>
-<hr>
-<div class="screenshots">
-    <img onclick="viewScreen()" src="images/screenshot_low_1.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 1">
-    <img onclick="viewScreen()" src="images/screenshot_low_2.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 2">
-    <img onclick="viewScreen()" src="images/screenshot_low_3.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 3">
-    <img onclick="viewScreen()" src="images/screenshot_low_4.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 4">
-    <img onclick="viewScreen()" src="images/screenshot_low_5.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 5">
-    <img onclick="viewScreen()" src="images/screenshot_low_6.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 6">
-    <img onclick="viewScreen()" src="images/screenshot_low_7.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 7">
-    <img onclick="viewScreen()" src="images/screenshot_low_8.png" class="screenshot" alt="Counter-Strike 1.6 Screenshot 8">
-</div>
-<hr>
-<h1 class="titles">System Requirements</h1>
-<hr>
-<div class="system_require">
-    <div class="system_require_column">
-        <h1 class="system_require_title">Minimum</h1>
-        <p class="system_require_text">CPU: Any</p>
-        <p class="system_require_text">CPU SPEED: 1.7 GHz</p>
-        <p class="system_require_text">RAM: 512 MB</p>
-        <p class="system_require_text">OS: Windows XP</p>
-        <p class="system_require_text">DirectX: 8.1</p>
-        <p class="system_require_text">FREE DISK SPACE: 4.6 GB</p>
-        <p class="system_require_text">VIDEO RAM: 64 MB</p>
+    <div id="viewScreen" class="view_screen">
+        <span class="close_view_screen" onclick="closeViewScreen()">&times;</span>
+        <img id="viewScreen1" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen2').src = 'images/screenshot_2.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 1">
+        <img id="viewScreen2" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen3').src = 'images/screenshot_3.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 2">
+        <img id="viewScreen3" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen4').src = 'images/screenshot_4.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 3">
+        <img id="viewScreen4" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen5').src = 'images/screenshot_5.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 4">
+        <img id="viewScreen5" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen6').src = 'images/screenshot_6.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 5">
+        <img id="viewScreen6" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen7').src = 'images/screenshot_7.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 6">
+        <img id="viewScreen7" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen8').src = 'images/screenshot_8.png'}" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 7">
+        <img id="viewScreen8" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 8">
     </div>
-    <div class="system_require_column">
-        <h1 class="system_require_title">Recommended</h1>
-        <p class="system_require_text">CPU: Pentium 4 or better</p>
-        <p class="system_require_text">CPU SPEED: 3.0 GHz or better</p>
-        <p class="system_require_text">RAM: 1 GB or more</p>
-        <p class="system_require_text">OS: Windows 7 or better</p>
-        <p class="system_require_text">DirectX: 9 or better</p>
-        <p class="system_require_text">FREE DISK SPACE: 5 GB or more</p>
-        <p class="system_require_text">VIDEO RAM: 128 MB or more</p>
+    <div class="head">
+        <img onclick="openLink('/',false)" class="head_cover" src="../../wingamma.png" alt="WinGamma Logo">
+        <button onclick="openLink('/',false)" class="menu_button_1">Search</button>
+        <button onclick="openLink('../../support',false)" class="menu_button_2">Support</button>
+        <button onclick="openLink('../../about',false)" class="menu_button_3">About</button>
     </div>
-    <div class="system_require_column">
-        <h1 class="system_require_title">Maximum</h1>
-        <p class="system_require_text">CPU: Not Specific</p>
-        <p class="system_require_text">CPU SPEED: Not Specific</p>
-        <p class="system_require_text">RAM: Not Specific</p>
-        <p class="system_require_text">OS: Windows 10</p>
-        <p class="system_require_text">DirectX: Not Specific</p>
-        <p class="system_require_text">FREE DISK SPACE: Not Specific</p>
-        <p class="system_require_text">VIDEO RAM: Not Specific</p>
+    <hr>
+    <img class="game_icon" src="images/icon.png" alt="Counter-Strike 1.6 Icon">
+    <h1 class="game_name">Counter-Strike 1.6 (CS 1.6)</h1>
+    <p class="game_download_detail">Download Size: 193 MB (EXE File)</p>
+    <a href="https://github.com/wingamma/wingamma.github.io/releases/download/game/Counter-Strike-1.6-Setup-WinGamma.exe"
+       target="_blank">
+        <img class="game_download_now" src="images/download_now.png" alt="Download Now!">
+    </a>
+    <hr>
+    <h1 class="titles">Screenshots</h1>
+    <hr>
+    <div class="screenshots">
+        <img id="s1" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s2').src = 'images/screenshot_low_2.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 1">
+        <img id="s2" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s3').src = 'images/screenshot_low_3.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 2">
+        <img id="s3" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s4').src = 'images/screenshot_low_4.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 3">
+        <img id="s4" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s5').src = 'images/screenshot_low_5.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 4">
+        <img id="s5" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s6').src = 'images/screenshot_low_6.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 5">
+        <img id="s6" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s7').src = 'images/screenshot_low_7.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 6">
+        <img id="s7" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('s8').src = 'images/screenshot_low_8.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 7">
+        <img id="s8" onload="if (this.getAttribute('src') !== 'images/no_image.png'){document.getElementById('viewScreen1').src = 'images/screenshot_1.png'}" onclick="viewScreen()" src="images/no_image.png" class="screenshot"
+             alt="Counter-Strike 1.6 Screenshot 8">
     </div>
-</div>
-<hr>
-<h1 class="titles">About / Story</h1>
-<hr>
-<div class="game_des">
-    <p class="game_des_text">Play the world's number 1 online action game. Engage in an incredibly realistic brand of
-        terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic
-        missions.Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success
-        affects your role.</p>
-</div>
-<hr>
-<a style="font-size: 2vw; margin: 1%; float: right;" href="mailto:info.wingamma@gmail.com">Report a problem</a>
+    <hr>
+    <h1 class="titles">System Requirements</h1>
+    <hr>
+    <div class="system_require">
+        <div class="system_require_column">
+            <h1 class="system_require_title">Minimum</h1>
+            <p class="system_require_text">CPU: Any</p>
+            <p class="system_require_text">CPU SPEED: 1.7 GHz</p>
+            <p class="system_require_text">RAM: 512 MB</p>
+            <p class="system_require_text">OS: Windows XP</p>
+            <p class="system_require_text">DirectX: 8.1</p>
+            <p class="system_require_text">FREE DISK SPACE: 4.6 GB</p>
+            <p class="system_require_text">VIDEO RAM: 64 MB</p>
+        </div>
+        <div class="system_require_column">
+            <h1 class="system_require_title">Recommended</h1>
+            <p class="system_require_text">CPU: Pentium 4 or better</p>
+            <p class="system_require_text">CPU SPEED: 3.0 GHz or better</p>
+            <p class="system_require_text">RAM: 1 GB or more</p>
+            <p class="system_require_text">OS: Windows 7 or better</p>
+            <p class="system_require_text">DirectX: 9 or better</p>
+            <p class="system_require_text">FREE DISK SPACE: 5 GB or more</p>
+            <p class="system_require_text">VIDEO RAM: 128 MB or more</p>
+        </div>
+        <div class="system_require_column">
+            <h1 class="system_require_title">Maximum</h1>
+            <p class="system_require_text">CPU: Not Specific</p>
+            <p class="system_require_text">CPU SPEED: Not Specific</p>
+            <p class="system_require_text">RAM: Not Specific</p>
+            <p class="system_require_text">OS: Windows 10</p>
+            <p class="system_require_text">DirectX: Not Specific</p>
+            <p class="system_require_text">FREE DISK SPACE: Not Specific</p>
+            <p class="system_require_text">VIDEO RAM: Not Specific</p>
+        </div>
+    </div>
+    <hr>
+    <h1 class="titles">About / Story</h1>
+    <hr>
+    <div class="game_des">
+        <p class="game_des_text">Play the world's number 1 online action game. Engage in an incredibly realistic brand
+            of
+            terrorist warfare in this wildly popular team-based game. Ally with teammates to complete strategic
+            missions.Take out enemy sites. Rescue hostages. Your role affects your team's success. Your team's success
+            affects your role.</p>
+    </div>
+    <hr>
+    <a style="font-size: 2vw; margin: 1%; float: right;" href="mailto:info.wingamma@gmail.com">Report a problem</a>
 </div>
 </body>
 </html>

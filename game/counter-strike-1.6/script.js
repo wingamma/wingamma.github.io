@@ -5,6 +5,8 @@ function onContentLoaded() {
 
 function showPage() {
     document.getElementById("content").style.display = "block";
+    document.getElementById("s1").src = "images/screenshot_low_1.png";
+    /*
     document.getElementById("viewScreen1").src = "images/screenshot_1.png";
     document.getElementById("viewScreen2").src = "images/screenshot_2.png";
     document.getElementById("viewScreen3").src = "images/screenshot_3.png";
@@ -13,6 +15,8 @@ function showPage() {
     document.getElementById("viewScreen6").src = "images/screenshot_6.png";
     document.getElementById("viewScreen7").src = "images/screenshot_7.png";
     document.getElementById("viewScreen8").src = "images/screenshot_8.png";
+
+     */
 }
 
 function openLink(_url, _blank) {
