@@ -1,5 +1,6 @@
 function onContentLoaded() {
     setTimeout(showPage, 500);
+    document.getElementById("splash").style.display = "none";
 }
 
 function showPage() {

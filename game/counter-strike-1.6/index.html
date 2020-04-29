@@ -15,12 +15,32 @@
 
     </script>
     <noscript>
-        <style>#content {
+        <style>
+            #content {
             display: block;
+        }
+
+        #splash {
+            display: none;
         }</style>
     </noscript>
 </head>
-<body id="content" class="content" onload="onContentLoaded()">
+<body onload="onContentLoaded()">
+<div style="position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+z-index: 10;
+background-color: #000000;" id="splash">
+    <div style="width: 100%; height: 100%;">
+        <img style="position: absolute; height: 33.33%; top: 30%; left: 0; right: 0; margin: auto;"
+             src="favicon.png"
+             title="WinGamma is loading your page, Please Wait..."
+             alt="Counter-Strike 1.6 (1.6)">
+       </div>
+</div>
+
 <noscript>
     <h1 style="color: #ffffff; font-size: 2.5vw;">No JavaScript</h1>
     <div style="background-color: red; position:fixed; top:0; left: 0; width:100%; z-index:1;">
@@ -28,6 +48,9 @@
             not work properly.</h1>
     </div>
 </noscript>
+
+<div id="content" class="content">
+
 <div id="viewScreen" class="view_screen">
     <span class="close_view_screen" onclick="closeViewScreen()">&times;</span>
     <img id="viewScreen1" src="images/no_image.png" class="view_screenshot" alt="Counter-Strike 1.6 Screenshot 1">
@@ -112,5 +135,6 @@
 </div>
 <hr>
 <a style="font-size: 2vw; margin: 1%; float: right;" href="mailto:info.wingamma@gmail.com">Report a problem</a>
+</div>
 </body>
 </html>
